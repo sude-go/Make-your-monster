@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Monster Maker</title>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" type="image/png" href="faces/face-1.png">
+</head>
+<body>
+<h1>Let's make your monster</h1>
+<div class="main">
+    <div class="tabs">
+        <div class="buttons btn-container">
+            <button class="button live" data-id="my_face" id="face-btn">Face</button>
+            <button class="button" data-id="color" id="color-btn">Color</button>
+            <button class="button" data-id="horn" id="horns-btn">Horns</button>
+            <button class="button" data-id="tail" id="tail-btn">Tail</button>
+        </div>
+        <div class="tabs-content">
+
+            <div class="content live" id="my_face">
+                <img src="faces/face-0.png" class="face-option" alt="face-0"/>
+                <img src="faces/face-1.png" class="face-option" alt="face-1"/>
+                <img src="faces/face-2.png" class="face-option" alt="face-2"/>
+                <img src="faces/face-3.png" class="face-option" alt="face-3"/>
+                <img src="faces/face-4.png" class="face-option" alt="face-4"/>
+                <img src="faces/face-5.png" class="face-option" alt="face-5"/>
+            </div>
+
+
+            <div class="content" id="color">
+                <span style="background-color: #ffa711" class="color-option" id="body-orange"></span>
+                <span style="background-color: #904ae8" class="color-option" id="body-purple"></span>
+                <span style="background-color: #ff4f51" class="color-option" id="body-red"></span>
+                <span style="background-color: #f3d55b" class="color-option" id="body-yellow"></span>
+                <span style="background-color: #42aaff" class="color-option" id="body-blue"></span>
+                <span style="background-color: #a8d530" class="color-option" id="body-green"></span>
+                <span style="background-color: #ae759e" class="color-option" id="body-pink"></span>
+                <span style="background-color: #6b7191" class="color-option" id="body-gray"></span>
+                <span style="background-color: #B19470" class="color-option" id="body-brown"></span>
+            </div>
+
+            <div class="content" id="horn">
+                <h3>Color</h3>
+                <span style="background-color: #ffa711" class="color-option" id="horn-orange"></span>
+                <span style="background-color: #904ae8" class="color-option" id="horn-purple"></span>
+                <span style="background-color: #ff4f51" class="color-option" id="horn-red"></span>
+                <span style="background-color: #f3d55b" class="color-option" id="horn-yellow"></span>
+                <span style="background-color: #42aaff" class="color-option" id="horn-blue"></span>
+                <span style="background-color: #a8d530" class="color-option" id="horn-green"></span>
+                <span style="background-color: #ae759e" class="color-option" id="horn-pink"></span>
+                <span style="background-color: #6b7191" class="color-option" id="horn-gray"></span>
+                <span style="background-color: #B19470" class="color-option" id="horn-brown"></span>
+            </div>
+
+            <div class="content" id="tail">
+                <h3>Color</h3>
+                <span style="background-color: #ffa711" class="color-option" id="tail-orange"></span>
+                <span style="background-color: #904ae8" class="color-option" id="tail-purple"></span>
+                <span style="background-color: #ff4f51" class="color-option" id="tail-red"></span>
+                <span style="background-color: #f3d55b" class="color-option" id="tail-yellow"></span>
+                <span style="background-color: #42aaff" class="color-option" id="tail-blue"></span>
+                <span style="background-color: #a8d530" class="color-option" id="tail-green"></span>
+                <span style="background-color: #ae759e" class="color-option" id="tail-pink"></span>
+                <span style="background-color: #6b7191" class="color-option" id="tail-gray"></span>
+                <span style="background-color: #B19470" class="color-option" id="tail-brown"></span>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <div class="monster">
+                <div class="monster-horns"></div>
+                <div class="monster-tail"></div>
+                <div class="monster-body" id="monster">
+                    <img src="faces/face-0.png" id="face"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Script -->
+<script src="script.js"></script>
+</body>
+</html>
