@@ -265,10 +265,25 @@ img {
 
     .buttons {
         display: flex;
+        flex-wrap: wrap;
+        padding: 0.5rem;
     }
 
-    .content img{
+    .content img {
         width: 10vw;
         margin-left: 3vw;
     }
+}
+
+@media (max-width: 480px) {
+    .monster {
+        width: 90vw;
+    }
+    .buttons button{
+        margin-bottom: 0.5rem;
+    }
+    h1 {
+        font-size: 2em;
+    }
+
 }
