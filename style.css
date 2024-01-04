@@ -71,7 +71,7 @@ h1 {
 }
 
 .button:hover:not(.live) {
-    background: #e93b81;
+    background: #3b1a64;
     color: white;
 }
 
@@ -113,7 +113,7 @@ h1 {
 }
 
 .button.live {
-    background: #7D4ECC;
+    background: #331557;
 }
 
 .content.live {
