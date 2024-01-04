@@ -87,26 +87,28 @@ h1 {
 .content img {
     margin: 0.5vw;
     position: relative;
-    width: 10vw;
+    width: 9vw;
     border: .2rem solid;
     border-radius: 2rem;
+    cursor: pointer;
 }
 
 .content .color-option {
     margin: 0.5vw;
-    height: 10vw;
-    width: 10vw;
+    height: 7.5vw;
+    width: 7.5vw;
     border-radius: 50%;
     display: inline-block;
+    cursor: pointer;
 }
 
 #horn .color-option,
-#tail .color-option{
+#tail .color-option {
     height: 5vw;
     width: 5vw;
 }
 
-#horn h3{
+#horn h3 {
     margin: 0.8vw;
 }
 
@@ -127,7 +129,7 @@ h1 {
     margin: auto;
     display: flex;
     justify-content: space-around;
-    padding: 2rem 0 0 0;
+    padding: 2rem 2rem 0 2rem;
 }
 
 .buttons button {
@@ -226,4 +228,47 @@ h1 {
 img {
     position: absolute;
     left: -1.5px;
+}
+
+@media (max-width: 1200px) {
+    .buttons {
+        display: grid;
+    }
+}
+
+@media (max-width: 960px) {
+    ::-webkit-scrollbar {
+        width: 20px;
+    }
+
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px black;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #3b1a64;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #331557;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .tabs {
+        width: auto;
+    }
+
+    .buttons {
+        display: flex;
+    }
+
+    .content img{
+        width: 10vw;
+        margin-left: 3vw;
+    }
 }
